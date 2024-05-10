@@ -1,0 +1,164 @@
+:root {
+    font-size: 62.5%;
+
+    --color-card: #fff;
+    --color-card-aux: #E4EDF1;
+    --color-text: #34355B;
+    --color-text-aux: #000;
+    --color-button: #FF9500;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background: linear-gradient(45deg, #190361, #bb00ff);
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    font-size: 1.6rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.hide {
+    display: none !important;
+}
+
+.screen1, .screen2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-card);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+
+    padding: 4.8rem 6.4rem 6.4rem;
+
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    width: 428px;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    background-color: var(--color-card-aux);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+
+    padding: 1rem;
+    height: 107px;
+    width: 100%;
+
+    box-sizing: border-box;
+    animation: cardContent 1.5s;
+}
+
+.card-content p {
+    text-align: center;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2.4rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+    color: var(--color-text);
+}
+
+p {
+    color: var(--color-text);
+    font-size: 1.5rem;
+
+    margin-bottom: 20px;
+}
+
+img {
+    cursor: pointer;
+}
+
+.opened-cookie {
+    margin: 5rem 0;
+}
+
+.fortune-cookie {
+    position: relative;
+}
+
+.fortune-cookie:hover {
+    animation: shake .2s infinite;
+}
+
+button {
+    background-color: var(--color-button);
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    color: white;
+    padding: 1.6rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* Keyframes */
+
+@keyframes shake {
+    0% {
+        left: 0;
+    }
+
+    25% {
+        left: 2px;
+        bottom: 2px;
+    }
+
+    50% {
+        left: 0;
+    }
+
+    75% {
+        left: -2px;
+        bottom: -2px;
+    }
+
+    100% {
+        left: 0
+    }
+}
+
+@keyframes cardContent {
+    0% {
+        top: 150px;
+        transform: scale(0.1);
+    }
+
+    100% {
+        top: 0px;
+        transform: scale(1);   
+    }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
