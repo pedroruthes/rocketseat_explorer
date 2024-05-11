@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-color: #FFF;
+    --bg-btn-color: #E1E1E6;
+    --bg-btn-hover-select-color: #02799D;
+    --color-text: #323238;
+    --color-icon: #323238;
+    --color-icon-select: #FFF;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+#app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13rem;
+
+    height: 100vh;
+}
+
+.timer span {
+    font-size: 11rem;
+}
+
+#controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+} 
+
+#controls button {
+    border: 0;
+    background-color: transparent;
+
+    font-size: 4.5rem;
+}
+
+#sounds {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+button {
+    cursor: pointer;
+}
+
+#sounds button {
+    font-size: 5rem;
+    border-radius: 1.5rem;
+    border: 0;
+
+    background-color: var(--bg-btn-color);
+
+    padding: 2.5rem;
+}
+
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle {
+    display: none;
+}
+
+.select {
+    background-color: var(--bg-btn-hover-select-color) !important;
+    color: var(--color-icon-select);
+}
