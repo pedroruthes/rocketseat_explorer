@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1.6rem;
+    background-image: url('./assets/background-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+
+    padding: 4rem 7.2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+
+    padding-left: 3.2rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 300;
+
+    color: #C4C4CC;
+}
+
+.selected {
+    font-weight: bold;
+    font-size: 2rem;
+    
+    color: white;
+}
+
+#app {
+    margin: auto;
+    padding-bottom: 10vh;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+button {
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    
+    padding: 10px 30px;
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.universe, .exploration {
+    width: 80%;
+    margin: auto;
+}
+
+p {
+    color: white;
+    margin-top: 10px;
+    font-size: 0.9em;
+    line-height: 1.6em;
+    font-weight: 300;
+    width: 60%;
+}
