@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    
+    --ff-primary: 'Poppins', sans-serif;
+    --text-color: #FFF;
+
+    --primary-color: #065E7C;
+    --table-color: #092D38;
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: rgb(0, 0, 0);
+}
+
+body * {
+    font-family: var(--ff-primary);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+
+    border-width: 0;
+}
+
+#app {
+    padding: 2rem;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 8.7rem 0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    width: 640px;
+}
+
+.search input {
+    height: 4.8rem;
+    width: 100%;
+    padding: 0 1.5rem;
+
+    border: 1px solid #06181C;
+    background-color: #06181C;
+    border-radius: .4rem 0 0 .4rem;
+
+    color: #7C7C8A;
+}
+
+.search button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: var(--primary-color);
+    border-radius: .4rem;
+    border: none;
+
+    height: 4.8rem;
+    padding: 0 3.2rem;
+}
+
+.search button p {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.search button:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0px;
+
+    border-radius: 1rem;
+    border: 1px solid var(--primary-color);
+
+    overflow: hidden;
+}
+
+table * {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+table th {
+    background-color: var(--table-color);
+    text-align: left;
+    
+    font-weight: bold;
+    padding: 1.5rem;
+}
+
+table tr {
+    border: 1px solid var(--primary-color);
+}
+
+table th:first-child {
+    border-top-left-radius: .4rem;
+}
+
+table th:last-child {
+    border-top-right-radius: .4rem;
+}
+
+table tr:nth-child(odd) {
+    background-color: rgba(6, 22, 27, 0.5);
+}
+
+table tr:nth-child(even) {
+    background-color: #06181C;
+}
+
+table td {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+td.user img {
+    width: 5rem;
+    height: 5rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td.user a {
+    text-decoration: none;
+}
+
+td.user a p {
+    font-weight: bold;
+}
+
+td .remove {
+    background: none;
+    border: none;
+    
+    color: #F75A68;
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.none {
+    height: 300px;
+    background-color: rgba(6, 22, 27, 0.5);
+}
+
+.none div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.none img {
+    width: 132px;
+    height: 125px;
+}
+
+.none p {
+    font-weight: 600;
+    color: #4E5455;
+    font-size: 3rem;
+
+    margin-top: 1rem;
+}
