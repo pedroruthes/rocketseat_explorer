@@ -9,9 +9,9 @@ Projetos e Desafios da Formação Explorer (FullStack) da plataforma [@rocketsea
 - [x] &nbsp; Stage 02 - Introdução ao HTML e CSS
 - [x] &nbsp; Stage 03 - Avançado no HTML e CSS
 - [x] &nbsp; Stage 04 - Introdução ao Javascript
-- [ ] &nbsp; Stage 05 - Avançado no Javascript
-- [ ] &nbsp; Stage 06 - Javascript antes do Framework
-- [ ] &nbsp; Stage 07 - Versionamento de código
+- [x] &nbsp; Stage 05 - Avançado no Javascript
+- [x] &nbsp; Stage 06 - Javascript antes do Framework
+- [x] &nbsp; Stage 07 - Versionamento de código
 - [ ] &nbsp; Stage 08 - Backend
 - [ ] &nbsp; Stage 09 - Frontend
 - [ ] &nbsp; Stage 10 - Integrando backend e frontend
